@@ -21,7 +21,6 @@
 </head>
 
 <body>
-
   <div class="account-pages"></div>
   <div class="clearfix"></div>
   <div class="wrapper-page">
@@ -31,16 +30,13 @@
     </div>
     <div class="m-t-40 card-box">
       <div class="text-center">
-        <h4 class="text-uppercase font-bold m-b-0">Reset Password</h4>
-
-        <p class="text-muted m-b-0 font-13 m-t-20">Enter your email address and we'll send you an email with
-          instructions to reset your password. </p>
-
-        <?= $this->session->flashdata('massage'); ?>
-
+        <h4 class="text-uppercase font-bold m-b-0">Forgot Password</h4>
       </div>
+
+
       <div class="p-20">
-        <form class="form-horizontal m-t-20" action="<?= base_url('auth/forgot_password') ?>">
+        <form class="form-horizontal m-t-20" method="post" action="<?= base_url('auth/forgot_password') ?>">
+          <?= $this->session->flashdata('massage'); ?>
 
           <div class="form-group">
             <div class="col-xs-12">
@@ -56,40 +52,32 @@
                 Email</button>
             </div>
           </div>
-
-        </form>
-
       </div>
+      </form>
     </div>
-    <!-- end card-box -->
-
     <div class="row">
       <div class="col-sm-12 text-center">
-        <p class="text-muted">Sudah Punya Akun?<a href="<?= base_url('auth') ?>" class="text-primary m-l-5"><b>Sign
+        <p class="text-muted">Sudah punya akun?<a href="auth" class="text-primary m-l-5"><b>Log
               In</b></a></p>
       </div>
     </div>
-
   </div>
+  <!-- end card-box-->
   <!-- end wrapper page -->
-
-
   <!-- jQuery  -->
-  <script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
-  <script src="<?php echo base_url() ?>assets/js/popper.min.js"></script>
-  <script src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
-  <script src="<?php echo base_url() ?>assets/js/detect.js"></script>
-  <script src="<?php echo base_url() ?>assets/js/fastclick.js"></script>
-  <script src="<?php echo base_url() ?>assets/js/jquery.blockUI.js"></script>
-  <script src="<?php echo base_url() ?>assets/js/waves.js"></script>
-  <script src="<?php echo base_url() ?>assets/js/jquery.nicescroll.js"></script>
-  <script src="<?php echo base_url() ?>assets/js/jquery.slimscroll.js"></script>
-  <script src="<?php echo base_url() ?>assets/js/jquery.scrollTo.min.js"></script>
-
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/jquery.min.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/popper.min.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/bootstrap.min.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/detect.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/fastclick.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/jquery.blockUI.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/waves.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/jquery.nicescroll.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/jquery.slimscroll.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/jquery.scrollTo.min.js"></script>
   <!-- App js -->
-  <script src="<?php echo base_url() ?>assets/js/jquery.core.js"></script>
-  <script src="<?php echo base_url() ?>assets/js/jquery.app.js"></script>
-
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/jquery.core.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminto/assets/js/jquery.app.js"></script>
 </body>
 
 </html>

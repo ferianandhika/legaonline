@@ -29,11 +29,9 @@
       <div class="text-center">
         <h4 class="text-uppercase font-bold m-b-0">Sign In</h4>
       </div>
-
-      <?= $this->session->flashdata('massage'); ?>
-
       <div class="p-20">
         <form class="form-horizontal m-t-20" method="post" action="<?= base_url('auth') ?>">
+          <?= $this->session->flashdata('massage'); ?>
           <div class="form-group">
             <div class="col-xs-12">
               <input class="form-control" type="text" id="email" name="email" placeholder="Email"

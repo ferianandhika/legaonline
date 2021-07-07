@@ -10,7 +10,7 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex">
   <link rel="shortcut icon" href="<?php echo base_url() ?>assets/adminto/assets/images/favicon.ico">
-  <title>Form Login </title>
+  <title>Form Change Password </title>
   <!-- App css -->
   <link href="<?php echo base_url() ?>assets/adminto/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo base_url() ?>assets/adminto/assets/css/icons.css" rel="stylesheet" type="text/css" />
